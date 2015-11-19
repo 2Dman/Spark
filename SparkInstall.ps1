@@ -1,5 +1,5 @@
 # Script name:   	SparkInstall.ps1
-# Version:			v1.00.151119
+# Version:			v1.01.151119
 # Created on:    	19/11/2015
 # Author:        	Riebbels Willem
 # Purpose:       	Install Spark
@@ -19,7 +19,7 @@
 #Begin Variable
 $Architecture = $ENV:PROCESSOR_ARCHITECTURE
 $SparkInstallPath = "C:\DRV\Spark\spark_2_7_3_online.exe"
-$SparkKerberos = "HKLM\System\CurrentControlSet\Control\Lsa\Kerberos"
+$SparkKerberos = "HKLM\System\CurrentControlSet\Control\Lsa\Kerberos\Parameters"
 $SparkInstaller = "2.7.3"
 $SparkBackupUserFolder = "C:\Users\$env:username\AppData\Roaming\Spark\Backup"
 
