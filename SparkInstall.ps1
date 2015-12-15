@@ -1,6 +1,6 @@
 # Script name:   	SparkInstall.ps1
-# Version:			v1.03.120315
-# Created on:    	19/11/2015
+# Version:			v1.03.121515
+# Created on:    	15/12/2015
 # Author:        	Riebbels Willem
 # Purpose:       	Install Spark
 #					
@@ -92,12 +92,12 @@ start-process -wait -Filepath $SparkInstallPath -ArgumentList $SparkInstallerArg
 $SparkProperties = "$ProgramsFolder\spark.properties"
 # Spark Connection Settings
 $hostAndPort = $true
-$xmppHost = "genim01.gentgrp.gent.be"
+$xmppHost = "host.domain"
 $xmppPort = 5222
 $ssoMethod = "dns"
 $ssoEnabled = $true
 #Login
-$server = "genim01.gentgrp.gent.be"
+$server = "host.domain"
 $autoLoginEnabled = $true
 $username = "$env:username"
 $loginAsInvisibleEnabled = $false
